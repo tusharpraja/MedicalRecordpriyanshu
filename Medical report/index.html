@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+	<title>Medical Report</title>
+</head>
+<body>
+	<div class="container">
+		<header> Medical Report </header>
+
+         <form action="#">
+            <div class="form-first">
+				<div class="fields">
+					<div class="input-field">
+						<label>Name:</label>
+						<input type="text" id="name" placeholder="Enter your name" >
+					</div>
+					<div class="input-field">
+						<label>Date: </label>
+						<input type="date" placeholder="Enter your date" >
+					</div>
+					<div class="input-field">
+						<label> When did your Start Problem:</label>
+						<input type="text" placeholder="Problem Start" >
+					</div>
+					<div class="input-field">
+						<label> Describe your Problem </label>
+						<input type="text" placeholder="Describe your Problem" >
+					</div>
+					<div class="input-field">
+						<label> Cause of Current Problem </label>
+						<select name="Cause of Current Problem">
+							<option selected="selected" value="Car Accident">Car Accident</option>
+							<option value="Work injury">Work injury</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+
+					<div class="input-field">
+						<label>Did this Problem require Surgery</label>
+						<select name="Did this Problem require Surgery">
+							<option selected="selected" value="Yes">Yes</option>
+							<option value="No">No</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					 
+				</div>
+                <span>Do You have a History of the Following Problem ?</span>
+				<div class="input-field-checkbox">
+					<input type="checkbox" name="Breathing Problem" value="yes" > Breathing Problem
+					<input type="checkbox" name="Stoke" value="yes" > Stoke
+					<input type="checkbox" name="Depression" value="yes" > Depression
+					<input type="checkbox" name=" Pregent" value="yes" > Pregent
+					<input type="checkbox" name="Heart Problem" value="yes" > Heart Problem
+					<input type="checkbox" name="Kidney Problem" value="yes" > Kidney Problem
+					<input type="checkbox" name="Liver Problem" value="yes" > Liver Problem
+					<input type="checkbox" name="Smoking" value="yes" >Smoking
+					<input type="checkbox" name="Cancer" value="yes" > Cancer Problem
+					<input type="checkbox" name="No Surgery" value="yes" >No Surgery
+
+				</div>
+				<br>
+				<br>
+               
+				<span>Please list Medications that you are taking.</span>
+				<div class="input-field">
+                    <textarea name="Medications" id="" cols="70" rows="3"  placeholder="Dose                           Reason for Medications"></textarea>
+				</div>
+
+				<br>
+				<br>
+
+				<span> Allergies </span>
+				<div class="input-field-checkbox1">
+					<input type="checkbox" name="Latex" value="yes" > Latex
+					<input type="checkbox" name="Iodine" value="yes" > Iodine
+					<input type="checkbox" name="Bromine" value="yes" > Bromine
+
+				</div> 
+				<br>
+
+
+				<div class="input-field">
+					<label> Do you have any religious/cultural view that will affect treatment  </label>
+					<select name="Cause of Current Problem">
+						<option selected="selected" value="yes">Yes</option>
+						<option value="No">No</option>
+					</select>
+				</div>
+
+				
+			</div>
+		 </form>
+
+		 <div class="button">
+			<button class="btn" onclick="submitfuction()"> Submit </button>
+
+		</div>
+
+
+	</div>
+</body>
+</html>
